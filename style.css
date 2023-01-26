@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #161616;
+}
+::-webkit-scrollbar-thumb{
+    background: #a9000b;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #87000a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;      
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#111111;
+    color: #202124;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color:#111111;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px #fff;
+    height: 70px;
+    z-index: 1000;
+    padding: 0px 50px;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    text-decoration: none;
+}
+ul li{
+    padding: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin:0px 22px ;
+}
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #bb000e;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+span{
+    color:#fff;
+}
+
+section{
+    min-height: 100vh;
+    padding: 90px 90px;
+    margin: 0px 30px;
+}
+
+.home{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-image: url(static/hbg.jpg);
+    background-size:cover;
+    /* background: fixed; */
+    margin: 0px 0px;
+    background-position:center;
+}
+.home-text{
+    /* background-color: aqua; */
+    min-width: 45vw;
+    font-size: 30px;
+}
+
+.home-text h4,p{
+    padding: 4px 0px;
+    color: white;
+}
+
+.home-text h1{
+    color:#d3000e;
+    font-size: 55px;
+}
+
+.home-text p{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+.home-img{
+    /* background-color: #fff; */
+    align-items:center;
+    margin: 40px 0px;
+}
+.profile{
+    /* height: 45vh; */
+    width: 40vw;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.about-container,.skills-container{
+    display: flex;
+    /* background-color: cyan; */
+}
+.about-image{
+    min-width: 300px;
+    /* height: 20vh; */
+    padding: 40px;
+    /* background-color: #202124; */
+}
+.abimg,.skimg{
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+.about-text{
+    min-width:min-content;
+    padding: 40px;
+    color: #fff;
+    font-size: 20px;
+    text-align:justify;
+}
+.about-head,.skills-head,.contact-head{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color:#fff;
+    margin: 30px 0px;
+    margin-bottom: 80px;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    /* background-color: cyan; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.skills-container .fa-solid{
+    font-size: 70px;
+    margin: 50px 0px;   
+    color: #d3000e;
+}
+
+.skills-container .skills-text{
+    width: fit-content;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    height: 58vh;
+    width: 30%;
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    text-align: center;
+    /* position: relative; */
+    transition: 0.3s;
+    padding: 30px;
+    
+}
+
+.skill:hover{
+    background-color:#e3000f;
+    transform: translateY(-8px);
+}
+.skill:hover>.fa-solid{
+    color: #fff;
+}
+.contact{
+    min-height: 90vh;
+}
+
+
+footer{
+    position:relative;
+}
+
+
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 50vh;
+    position: relative;
+}
+
+.fa-github,.fa-instagram,.fa-linkedin{
+    width: 25px;
+}
+.socials{
+    background-color: #161616;
+    border-radius: 25px;
+    width: 45%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.socials .platform{
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+.github,.instagram,.linkedin{
+    margin: 10px 0px;
+}
+.socials .platform a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.socials .platform a:hover{
+    color: #bb000e;
+
+}
+
+.socials h4{
+    font-size: 35px;
+    margin: 20px 0px;
+}
+
+.contact-form{
+    background-color: #161616;
+    border-radius:25px ;
+    font-size: 20px;
+    width: 45%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.name-email{
+    display: flex;
+    margin: 15px 0px;
+    /* justify-content: space-between; */
+}
+.ymail{
+    width: 100%;
+    padding: 15px 20px;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.yname{
+    width: 100%;
+    padding: 15px 20px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.yname,.ymail{
+    border-radius: 25px;
+    border-color: #1c1c1c;
+}
+
+
+.message{
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border-color: #1c1c1c;
+}
+
+input{
+    padding: 15px 15px;
+}
+
+.copyright{
+    background-color: #bb000e;
+    padding: 13px;
+    margin: 0px;
+    text-align: center;
+    transition: 0.5s;
+    color:#fff;
+}
+footer{
+    bottom: 0px;
+    /* position:fixed; */
+    /* height: 40px; */
+    width: 100%;
+}
+.copyright:hover{
+    font-size: 17px;
+
+}
+header .fa-bars, header .fa-circle-xmark{
+    display: none;
+}
+
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+.show{
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+
+/* -------------css for mobilee-------- */
+
+@media only screen and (max-width:600px){
+
+    section{
+        padding: 0.6em 0.6em;
+        width: auto;
+        justify-content: center;
+        margin: 0px;
+    }
+    .about-head,.skills-head,.contact-head{
+        font-size: 30px;
+    }
+    ul .fa-circle-xmark{
+        color: #fff;
+        display: block; 
+    }
+    header .fa-bars{
+        display: block;
+        margin: 0px 10px;
+        color: #d3000e;
+        font-size: 20px;
+    }
+     ul .fa-circle-xmark{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        font-size: 20px;
+    }
+    header{
+        height: 8vh;
+        background-color: #111111;
+        padding: 0px 20px;
+    }
+
+   header ul{
+        background-color: #d3000e;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px; 
+        flex-direction: column;
+        transition: 0.3s;
+        z-index: 2;
+    }
+    header ul li{
+         margin: 10px 0px;
+    }
+    ul li a::after{
+        background: #fff;
+       
+    }
+
+        /* HOME */
+    .home{
+        background-image: url(static/web.jpg);
+        background-size: cover;
+    }
+    .home-text h4{
+        font-size: 20px;
+    }
+    .home-text h1{
+        font-size: 40px;
+    }
+    .home-text p{
+        font-size: 15px;   
+    }
+
+    .home-img{
+        display: none;
+    }
+
+    /* --------ABOUT----- */
+
+    .about{
+        justify-content: center;
+        width:fit-content;
+    }
+    .about-image{
+        padding: 30px;
+        margin: auto;
+    }
+    .abimg{
+        justify-content: center;
+    }
+    .about-container{
+        flex-direction: column;
+        justify-content:center;
+    }
+    
+    /* SKILLLS */
+
+    .skills-container{  
+        flex-direction: column;
+    }
+    .skill{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .skills-container .fa-solid{
+        font-size: 80px;
+        margin: 60px 0px;   
+    }
+    
+    .skills-container .skills-text{
+        width: fit-content;
+        margin: 15px 30px;
+        text-align: center;
+    }
+
+    /* CONTACT */
+    .contact{
+        height: fit-content;
+    }
+    .contact-content{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .contact-form,.socials{
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+    .name-email{
+        flex-direction: column;
+    }
+    .yname,.ymail{
+        width: 100%;
+        padding: 15px;
+        margin: 0px 0px;
+        height: 100%;
+    }
+    .yyname,.yymail{
+        /* width: 100%; */
+        padding: 10px;
+        height: 100%;
+    }
+    footer{
+        bottom: 0px;
+        height: 40px;
+        width: 100%;
+        position: fixed;
+    }
+}
