@@ -85,7 +85,7 @@ ul li a:hover::after{
 }
 
 span{
-    color:#fff;
+    color:red;
 }
 
 section{
@@ -141,7 +141,7 @@ section{
 }
 
 .about-image{
-    min-width: 300px;
+    min-width: 400px;
     padding: 40px;
 }
 
@@ -150,12 +150,45 @@ section{
     border-radius: 25px;
 }
 
+.about-links{
+    margin-top: 30px;
+}
+
+
+.about-links .active-link{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.about-links a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    margin: 0px 10px;
+    transition: 0.3s;
+}
+.about-links a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.link-content{
+    margin-top: 20px;
+    display: none;
+}
+.link-content li{
+    font-size: 18px;
+    padding: 5px;
+}
+.link-content.active{
+    display: block;
+}
 
 .about-text{
     min-width:min-content;
     padding: 40px;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     text-align:justify;
 }
 .about-head,.skills-head,.contact-head{
@@ -374,6 +407,28 @@ footer{
     .about-text{
         padding: 24px 0px;
     }
+    .about-image{
+        min-width: 300px;
+    }
+
+    .about-links{
+        margin-top: 30px;
+    }
+    .about-links a{
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0px 8px;
+        transition: 0.3s;
+    } 
+    .link-content{
+        margin-top: 15px;
+    }
+    .link-content li{
+        font-size: 18px;
+        padding: 5px;
+    }
 
     /* SKILLS */
     .skill{
@@ -501,6 +556,7 @@ footer{
         margin: auto;
     }
     .about-text{
+        font-size: 18px;
         padding: 10px;
     }
     .abimg{
@@ -510,7 +566,25 @@ footer{
         flex-direction: column;
         justify-content:center;
     }
-    
+    .about-links{
+        margin-top: 30px;
+    }
+    .about-links a{
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0px 8px;
+        transition: 0.3s;
+    } 
+    .link-content{
+        margin-top: 15px;
+    }
+    .link-content li{
+        font-size: 18px;
+        padding: 5px;
+    }
+
     /* SKILLLS */
 
     .skills-container{  
