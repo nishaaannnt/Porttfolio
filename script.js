@@ -1,3 +1,4 @@
+// MOBILE SCREEN SIDE MENU
 var sideMenu =document.getElementById("sidemenu");
 
 function openmenu(){
@@ -8,6 +9,8 @@ function closemenu(){
     sideMenu.style.right='-200px';
 }
 
+
+// FOR ANIMATION
 const observer=new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         console.log(entry)
