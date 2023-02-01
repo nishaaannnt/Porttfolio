@@ -333,6 +333,10 @@ section{
 
 input{
     padding: 15px 15px;
+    outline: none;
+}
+textarea{
+    outline: none;
 }
 
 /* FOOTER */
