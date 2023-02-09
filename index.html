@@ -1,202 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nishant Dixit | Portfolio</title>
-    <link rel="shortcut icon" type="x-icon" href="static/icon.png" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NAVBAR SECTION --->
-    <header>
-      <a href="#home" class="logo"
-        >Nishant .<span>.</span> </a
-      >
-      <div></div>
-      <ul class="navbar" id="sidemenu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-      </ul>
-      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-    </header>
 
-    <!-- HOME SECTION -->
-    <section class="home" id="home">
-      <div class="home-text">
-        <h4>Hello, I am</h4>
-        <h1 class="name-head hidden">Nishant Dixit</h1>
-        <h4>Computer Science student</h4>
-        <p>Currently in second year learning web Development and doing a bit of Competitive Programming.</p>
-        <button class="connect_btn"><a href="#contact">Connect</a> </button>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishant Dixit | Portfolio</title>
+  <link rel="shortcut icon" type="x-icon" href="static/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-      <div>
-        <div class="about-head">
-          <h2>About me</h2>
-        </div>
-        <div class="about-container">
-          <div class="about-image hidden">
-            <img class="abimg" src="static/bg2.jpg" alt="img" />
-          </div>
-          <div class="about-text">
-            <p>
-              Hello, I am<span> Nishant Dixit</span> ,
-              currently pursuing Btech in CS from Pillai College of Engineering.
-              I am in second year right now and am learning web development and
-              also making few projects on it, including this one. Languages I am
-              familiar with are C,C++,Python,Java and web development languages.
-              My plans for future is to explore computer science more as I look
-              forward to work more on it. Visit my Github link in contact for
-              more !
-            </p>
-            <div class="about-links">
-                <a class="alinks active-link" onclick="openlink('education')">EDUCATION</a>
-                <a class="alinks" onclick="openlink('experience')">EXPERIENCE</a>
-                <a class="alinks" onclick="openlink('currently')">CURRENTLY</a>
-            </div>
-            <div class="link-content active" id="education">
-                <ul>
-                    <li><span>> Pillai College of Engineering</span><br><p>Btech Computer science</p></li>
-                    <li><span>> KLE College</span><br><p>11th and 12th</p></li>
-                    <li><span>> St. Joseph High School</span><br><p>Education till SSC</p></li>
-                </ul>
-            </div>
-            <div class="link-content" id="experience">
-                <ul>
-                    <li><span>> GUI</span><br><p>Python Tkinter based applications</p></li>
-                    <li><span>> Web Development</span><br><p>Full Stack Applications</p></li>
-                    <li><span>> Chrome Extensions</span><br><p>Extensions using JS</p></li>
-                </ul>
-            </div>
-            <div class="link-content" id="currently">
-                <ul>
-                    <li><span>> Google Developers Student Club</span><br><p>Technical Team Member</p></li>
-                    <li><span>> Working on Projects </span><br><p>Related to real life problems</p></li>
-                    <li><span>> Fourth Semester</span><br><p>I am in second half of my second year</p></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<body>
+  <!-- NAVBAR SECTION --->
+  <header>
+    <a href="#home" class="logo">Nishant .<span>.</span> </a>
+    <div></div>
+    <ul class="navbar" id="sidemenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+  </header>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills" id="skills">
-      <div class="skills-head">
-        <h2>Skills</h2>
+  <!-- HOME SECTION -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h4>Hello, I am</h4>
+      <h1 class="name-head hidden">Nishant Dixit</h1>
+      <h4>Computer Science student</h4>
+      <p>Currently in second year learning web Development and doing a bit of Competitive Programming.</p>
+      <button class="connect_btn"><a href="#contact">Connect</a> </button>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div>
+      <div class="about-head">
+        <h2>About me</h2>
       </div>
-      <div class="skills-container">
-        <div class="skill hidden">
-          <h2>Problem Solving</h2>
-          <i class="fa-solid fa-gears"></i>
-          <p class="skills-text">
-            Practicing on various platforms such as HackerRank, Leetcode,
-            CodeForces.
-          </p>
+      <div class="about-container">
+        <div class="about-image hidden">
+          <img class="abimg" src="static/bg2.jpg" alt="img" />
         </div>
-        <div class="skill hidden">
-          <h2>Web Development</h2>
-          <i class="fa-solid fa-tractor"></i>
-          <p class="skills-text">
-            Made a portal for farmers to access the Information about other
-            farmer's mindset and agricultural activities. Frameworks used were
-            Django and SQLlite.
-          </p>
-        </div>
-        <div class="skill hidden">
-          <h2>Familiar Languages</h2>
-          <i class="fa-solid fa-list"></i>
-          <p class="skills-text">
-            Familiar with various languages.Also made a project of basic To-do
-            List made from Python-Tkinter with the help of file system.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- CONTACT ME -->
-    <section class="contact" id="contact">
-      <div class="contact-head">
-        <h2>Contact Me</h2>
-      </div>
-      <div class="contact-content">
-        <div class="socials hidden">
-          <h4>How to Contact?</h4>
+        <div class="about-text">
           <p>
-            Feel free to reach me from any of the platform below. See my Github
-            for project Information. Also you can fill the form beside to
-            contact me through mail.
+            Hello, I am<span> Nishant Dixit</span> ,
+            currently pursuing Btech in CS from Pillai College of Engineering.
+            I am in second year right now and am learning web development and
+            also making few projects on it, including this one. Languages I am
+            familiar with are C,C++,Python,Java and web development languages.
+            My plans for future is to explore computer science more as I look
+            forward to work more on it. Visit my Github link in contact for
+            more !
           </p>
-          <div class="platform">
-            <div class="github">
-              <a href="https://github.com/nishaaannnt" target="_blank"
-                ><i class="fa-brands fa-github"></i> Github</a
-              >
-            </div>
-            <div class="linkedin">
-              <a
-                href="https://www.linkedin.com/in/nishantdixitt/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i> LinkedIN</a
-              >
-            </div>
-            <div class="instagram">
-              <a href="https://www.instagram.com/nishaaannt/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i> Instagram</a
-              >
-            </div>
+          <div class="about-links">
+            <a class="alinks active-link" onclick="openlink('education')">EDUCATION</a>
+            <a class="alinks" onclick="openlink('experience')">EXPERIENCE</a>
+            <a class="alinks" onclick="openlink('currently')">CURRENTLY</a>
+          </div>
+          <div class="link-content active" id="education">
+            <ul>
+              <li><span>> Pillai College of Engineering</span><br>
+                <p>Btech Computer science</p>
+              </li>
+              <li><span>> KLE College</span><br>
+                <p>11th and 12th</p>
+              </li>
+              <li><span>> St. Joseph High School</span><br>
+                <p>Education till SSC</p>
+              </li>
+            </ul>
+          </div>
+          <div class="link-content" id="experience">
+            <ul>
+              <li><span>> GUI</span><br>
+                <p>Python Tkinter based applications</p>
+              </li>
+              <li><span>> Web Development</span><br>
+                <p>Full Stack Applications</p>
+              </li>
+              <li><span>> Chrome Extensions</span><br>
+                <p>Extensions using JS</p>
+              </li>
+            </ul>
+          </div>
+          <div class="link-content" id="currently">
+            <ul>
+              <li><span>> Google Developers Student Club</span><br>
+                <p>Technical Team Member</p>
+              </li>
+              <li><span>> Working on Projects </span><br>
+                <p>Related to real life problems</p>
+              </li>
+              <li><span>> Fourth Semester</span><br>
+                <p>I am in second half of my second year</p>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="contact-form hidden">
-          <h2>Mail Me</h2>
-          <form action="">
-            <div class="name-email">
-              <div class="yyname">
-                <input
-                  type="name"
-                  class="yname"
-                  placeholder="Name"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="yymail">
-                <input
-                  type="email"
-                  class="ymail"
-                  placeholder="E-mail"
-                  name="email"
-                  required
-                />
-              </div>
-            </div>
-            <div>
-              <textarea
-                name="message"
-                class="message"
-                placeholder="Message"
-                cols="30"
-                rows="7"
-              ></textarea>
-            </div>
-          </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="skills-head">
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-container">
+      <div class="skill hidden">
+        <h2>Problem Solving</h2>
+        <i class="fa-solid fa-gears"></i>
+        <p class="skills-text">
+          Practicing on various platforms such as HackerRank, Leetcode,
+          CodeForces.
+        </p>
+      </div>
+      <div class="skill hidden">
+        <h2>Web Development</h2>
+        <i class="fa-solid fa-tractor"></i>
+        <p class="skills-text">
+          Made a portal for farmers to access the Information about other
+          farmer's mindset and agricultural activities. Frameworks used were
+          Django and SQLlite.
+        </p>
+      </div>
+      <div class="skill hidden">
+        <h2>Familiar Languages</h2>
+        <i class="fa-solid fa-list"></i>
+        <p class="skills-text">
+          Familiar with various languages.Also made a project of basic To-do
+          List made from Python-Tkinter with the help of file system.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT ME -->
+  <section class="contact" id="contact">
+    <div class="contact-head">
+      <h2>Contact Me</h2>
+    </div>
+    <div class="contact-content">
+      <div class="socials hidden">
+        <h4>How to Contact?</h4>
+        <p>
+          Feel free to reach me from any of the platform below. See my Github
+          for project Information. Also you contact me by your email.
+        </p>
+        <div class="platform">
+          <div class="github">
+            <a href="https://github.com/nishaaannnt" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/nishantdixitt/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+              LinkedIN</a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/nishaaannt/" target="_blank"><i class="fa-brands fa-instagram"></i>
+              Instagram</a>
+          </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="copyright">© Nishant Dixit | All Right Reserved.</div>
-    </footer>
-    <script
-      src="https://kit.fontawesome.com/6c31fd0cef.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+      <div class="contact-form hidden">
+        <h2>Mail Me</h2>
+        <div class="mail-desc"><p> You can contact me by mail using the button below and connect with me. It will ask you to open your default mail application.</p></div>
+        <p> MAIL<span style="color: #ff0000;"> : </span>dixitnishant2004@gmail.com</p>
+        <div class="mailbutton">
+              <a class="mail-btn" href="mailto:dixitnishant2004@gmail.com?subject=Your name and your subject&body=Add brief about your topic">Send Mail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="copyright">© Nishant Dixit | All Right Reserved.</div>
+  </footer>
+  <script src="https://kit.fontawesome.com/6c31fd0cef.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
