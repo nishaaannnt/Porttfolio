@@ -121,22 +121,20 @@ section{
 
 .home-text h1{
     font-size: 6.5rem;
-    font-weight:800;
-    background: linear-gradient(60deg, #e21111, #ff823a);
+    text-transform: uppercase;   
+    font-weight:900;
+    background: linear-gradient(60deg,rgb(255, 175, 175), #a9000b,#ff7728);
+    background-size: 300%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    animation: bg-gradient 5s infinite alternate;
 }
 
-.home-text p{
+.home-text p{      
     margin-top: 5px;
     padding: 10px 0px;
     font-size: 17px;
     width: 100%;
-}
-.home-text .linear_g{
-    background: linear-gradient(60deg,#ff893a,#e21111);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
 }
 .profile{
     width: 40vw;
@@ -151,8 +149,8 @@ section{
     padding: 8px 20px;
     border-radius: 8px;
     margin-top: 50px;
-    background:linear-gradient(60deg,#ff893a,#c40000); 
-    transition: 0.3s;
+    background:linear-gradient(60deg,#ff3a3a,#c40000); 
+    transition: 0.6s;
 }
 .connect_btn:hover{
     color: #fff;
@@ -399,6 +397,15 @@ footer{
     transform: translateX(0%);
 }
 
+@keyframes bg-gradient{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
 
 /* RESPONSIVE FOR 1100PX */
 
@@ -418,10 +425,11 @@ footer{
     /* HOME */
     
     .home-text{
-        margin:0px 30px;
+        margin:40px 50px;
     }
     .home-text h1{
-        font-size: 40px;
+        font-size: 70px;
+        margin: 20px 0px;
     }
     .home-text h4{
         font-size: 25px;
@@ -429,6 +437,7 @@ footer{
     
     .home-text p{
         font-size: 15px;
+        margin: 10px 0px;
     }
 
     /* ABOUT */
