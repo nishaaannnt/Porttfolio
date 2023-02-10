@@ -2,6 +2,7 @@
 ::-webkit-scrollbar{
     width: 10px;
 }
+/* SCROLLBAR */
 
 ::-webkit-scrollbar-track{
     background-color: #161616;
@@ -85,7 +86,7 @@ ul li a:hover::after{
 }
 
 span{
-    color:red;
+    color:rgb(219, 0, 0);
 }
 
 section{
@@ -100,12 +101,9 @@ section{
     position: relative;
     flex-direction: column;
     align-items: center;
-    /* background-image: url(static/hbg.jpg); */
     background-size:cover;
     margin: auto;
-    background-position:center;
-
-    
+    background-position:center;   
 }
 .home-text{
     margin: 100px 0px;
@@ -125,10 +123,21 @@ section{
     font-weight:900;
     background: linear-gradient(60deg,rgb(255, 0, 0), #a9000b,#ff7728);
     background-size: 300%;
+    transition: 1s;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: bg-gradient 5s infinite alternate;
 }
+.linearg{
+    margin: 15px 0px;
+    font-size: 3rem;
+    background: linear-gradient(60deg,rgb(255, 0, 0), #a9000b,#ff7728);
+    background-size: 300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: bg-gradient 5s infinite alternate;   
+}
+
 
 .home-text p{      
     margin-top: 5px;
@@ -164,11 +173,16 @@ section{
 
 .about-image{
     min-width: 400px;
+    max-width: 450px;
     padding: 40px;
 }
 
-.abimg,.skimg{
+.abimg{
     width: 100%;
+    padding: 3px;
+    border: 2px solid #ad0d18 ;
+    border-top: #1c1c1c;
+    border-bottom: #1c1c1c;
     border-radius: 25px;
 }
 
@@ -187,7 +201,7 @@ section{
     color: aliceblue;
     font-weight: bold;
     margin: 0px 10px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .about-links a:hover{
     color: red;
@@ -213,7 +227,8 @@ section{
     font-size: 18px;
     text-align:justify;
 }
-.about-head,.skills-head,.contact-head{
+.about-head,.skills-head,.contact-head,.project-head{
+    text-transform: uppercase;
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
@@ -263,6 +278,54 @@ section{
 }
 .skill:hover>.fa-solid{
     color: #fff;
+}
+
+/* PROJECT */
+
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.project-container .fa-solid{
+    font-size: 70px;
+    margin: 50px 0px;   
+    color: #d3000e;
+}
+
+.project-container .project-text{
+    width:auto;
+    margin: 10px 30px;
+    text-align: center;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    min-height: 30%;
+    width: 20%;
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+    padding: 30px;
+    
+}
+.project:hover{
+    background-color:#e3000f;
+    transform: translateY(-8px);
+}
+.project:hover>a .fa-solid{
+    color: #fff;
+}
+
+.project-desc{
+    color: #fff;
+    margin-top: 70px;
+    text-align: center;
 }
 
 /* CONTACT */
@@ -345,7 +408,7 @@ section{
 /* FOOTER */
 .copyright{
     background-color: #bb000e;
-    padding: 13px;
+    padding: 10px;
     margin: 0px;
     text-align: center;
     transition: 0.5s;
@@ -359,7 +422,7 @@ footer{
 }
 
 .copyright:hover{
-    font-size: 17px;
+    font-size: 16.5px;
 }
 
 
@@ -369,7 +432,7 @@ footer{
     opacity: 0;
     filter: blur(5px);
     transform: translateY(30%);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .show{
@@ -454,6 +517,15 @@ footer{
         padding: 10px;    
     }
     .skills-container{
+        margin: 0px;
+    }
+
+    /* PROJECTS */
+    .project{
+        width: 33%;
+        padding: 10px;    
+    }
+    .project-container{
         margin: 0px;
     }
 
@@ -586,13 +658,15 @@ footer{
     }
     .about-links{
         margin-top: 30px;
+        display: flex;
+        flex-direction: column;
     }
     .about-links a{
         text-decoration: none;
         color: aliceblue;
         font-weight: bold;
         font-size: 16px;
-        margin: 0px 8px;
+        margin: 5px 8px;
         transition: 0.3s;
     } 
     .link-content{
@@ -620,6 +694,24 @@ footer{
     .skills-container .skills-text{
         width: fit-content;
         margin: 15px 30px;
+        text-align: center;
+    }
+    /* PROJECTS */
+    .project-container{  
+        flex-direction: column;
+    }
+    .project{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .project-container .fa-solid{
+        font-size: 80px;
+        margin: 40px 0px;   
+    }
+    
+    .project-container .projects-text{
+        width: fit-content;
+        margin: 10px 30px;
         text-align: center;
     }
 
